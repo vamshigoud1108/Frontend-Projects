@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Jost:wght@100;200;300;400;500&family=Nunito:wght@300;400;500;600;700&family=Outfit:wght@400;700&family=Overpass:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <title>Spotify Clone</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="left">
+      <nav>
+        <div class="logo">
+          <i class='bx bxl-spotify'></i>
+          <p>Spotify</p>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#"class="home">
+              <i class='bx bxs-home'></i>
+              <span >Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="search">
+              <i class="bx bx-search"></i>
+              <span >Search</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="library-sec">
+        <div class="heading">
+          <div>
+            <img src="assets/library_icon.png" alt="">
+            <p>Your Library</p>
+          </div>
+          <div class="icons">
+            <i class="bx bx-plus"></i>
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+        </div>
+        <div class="playlist">
+          <div class="box" id="playlist-box">
+            <span>Create your first playlist</span>
+            <p>It's easy,we'll help you</p>
+            <button>Create playlist</button>
+          </div>
+          <div class="box" id="podcast-box">
+            <span>Let's find some podcast to follow</span>
+            <p>We will keep you updated on new episodes</p>
+            <button>Create playlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <header>
+        <div class="arrows">
+          <img src="assets/forward_icon.png" alt="">
+          <img src="assets/backward_icon.png" alt="">
+        </div>
+        <div class="menu">
+          <button class="premium-btn">Explore Premium</button>
+          <button class="install-btn"><i class="bx bx-download"></i>Install App</button>
+          <i class="bx bx-user" id="user-icon"></i>
+        </div>
+      </header>
+      <div class="music">
+        <h2>Spotify Playlists</h2>
+        <div class="card-cn">
+          <div class="card">
+            <img class="card-img" src="assets/card1img.jpeg" alt="">
+            <h5>Mega Hit Mix</h5>
+            <p>A mega mix of 75 favorites from  the last few years!</p>
+            <div class="play-icon">
+              <img src="assets/play_musicbar.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/card2img.jpeg" alt="">
+            <h5>Mellow Lofi Morning</h5>
+            <p>Laid-back beats for an easy going mornings.</p>
+            <div class="play-icon">
+              <img src="assets/play_musicbar.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/card3img.jpeg" alt="">
+            <h5>Rise</h5>
+            <p>Psitive and uplifting ambient instrumental...</p>
+            <div class="play-icon">
+              <img src="assets/play_musicbar.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/card4img.jpeg" alt="">
+            <h5>Rock Classics</h5>
+            <p>Rock Legends & epic songs that continue to inspire...</p>
+            <div class="play-icon">
+              <img src="assets/play_musicbar.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/card5img.jpeg" alt="">
+            <h5>Peaceful Piano</h5>
+            <p>Peaceful piano to help you slow down,breathe,and...</p>
+            <div class="play-icon">
+              <img src="assets/play_musicbar.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/card6img.jpeg" alt="">
+            <h5>Mood Booster</h5>
+            <p>Get happy with today's dose of feel-good songs!</p>
+            <div class="play-icon">
+              <img src="assets/play_musicbar.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/card1img.jpeg" alt="">
+            <h5>Chilll Hits</h5>
+            <p>Kick back to the best new and recent chill hits.</p>
+            <div class="play-icon">
+              <img src="assets/play_musicbar.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/card2img.jpeg" alt="">
+            <h5>RapCaviar</h5>
+            <p>A mega mix of 75 favorites from  the last few years!</p>
+            <div class="play-icon">
+              <img src="assets/play_musicbar.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/card3img.jpeg" alt="">
+            <h5>Mega Hit Mix</h5>
+            <p>A mega mix of 75 favorites from  the last few years!</p>
+            <div class="play-icon">
+              <img src="assets/play_musicbar.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/card4img.jpeg" alt="">
+            <h5>Mega Hit Mix</h5>
+            <p>A mega mix of 75 favorites from  the last few years!</p>
+            <div class="play-icon">
+              <img src="assets/play_musicbar.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="player">
+    <div class="left-sec">
+      <img src="assets/card2img.jpeg" alt="">
+      <div class="song">
+        <h5>DayLight</span>
+        <h6>Davide Kush</h6>
+      </div>
+      <i class="bx bx-heart"></i>
+      <i id="op" class='bx bx-dots-horizontal-rounded' id="options"></i>
+    </div>
+    <div class="middle-sec">
+      <div class="tools">
+        <img src="assets/player_icon1.png" alt="">
+        <img src="assets/player_icon2.png" alt="">
+        <img id="play" src="assets/player_icon3.png" alt="">
+        <img src="assets/player_icon4.png" alt="">
+        <img src="assets/player_icon5.png" alt="">
+      </div>
+      <div class="scroll">
+        <span>0:00</span>
+        <input type="range" min="0" max="0" step="1" class="progress">
+        <span>3:30</span>
+      </div>
+    </div>
+    <div class="right-sec">
+      <i id="play-icon" class="bx bx-play-circle"></i>
+      <i class="bx bxs-microphone"></i>
+      <i class='bx bxs-layer'></i>
+      <i class="bx bx-desktop"></i>
+      <i class="bx bx-volume-full"></i>
+      <input type="range" min="0" max="100" step="1" class="progress">
+    </div>
+  </div>
+</body>
+</html>

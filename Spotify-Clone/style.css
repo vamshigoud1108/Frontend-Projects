@@ -1,0 +1,383 @@
+*{
+  padding: 0;
+  margin:0;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background: #000;
+}
+.main{
+  display: flex;
+  align-items: center;
+  height:100vh;
+}
+.left,.right{
+  width:350px;
+  height:100vh;
+}
+.left nav{
+  background-color: #121212;
+  border-radius: 15px;
+  padding:20px;
+  margin:10px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  color:#fff;
+}
+.logo i{
+  font-size:28px;
+}
+.logo p{
+  font-size: 16px;
+  font-weight:500;
+}
+.nav-links li{
+  margin-top:20px;
+}
+.nav-links .home{
+  color:#fff;
+}
+.nav-links a{
+ color:#A7A7A7;
+ display: flex;
+ align-items: center;
+ gap:15px;
+ font-weight:500;
+ transition: .3s;
+}
+.nav-links a:hover{
+  color:#fff;
+}
+.nav-links i{
+  font-size: 25px;
+}
+
+/* Library Section */
+.library-sec{
+  background-color: #121212;
+  margin-top: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin:10px;
+  height:70vh;
+}
+.library-sec .heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:#fff;
+  padding:20px;
+}
+.library-sec .heading div{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.library-sec .heading div p{
+  font-weight: 500;
+  color:#A7A7A7;
+}
+.library-sec .heading img{
+  width:20px;
+  filter: brightness(0.7);
+}
+.library-sec .heading i{
+  font-size: 20px;
+  cursor: pointer;
+  color:#A7A7A7;
+  padding:6px;
+  border-radius: 50%;
+}
+.library-sec .heading i:hover{
+  background-color: #1e1e1e;
+  transition: .3s;
+  color:#fff;
+}
+.library-sec .playlist{
+  margin-top:0px;
+  padding:0px 10px;
+}
+.playlist .box{
+  padding:15px;
+  border-radius: 15px;
+  color:#fff;
+  background-color: #252525;
+}
+#podcast-box{
+  margin-top:20px;
+}
+.box span{
+  font-weight: 500;
+}
+.box p{
+  font-size:14px;
+  margin: 5px;
+  color: #A7A7A7;
+}
+.box button{
+  font-size: 14px;
+  padding:5px 10px;
+  border-radius:20px;
+  border:0;
+  font-weight: 500;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.right{
+  flex: 1;
+  background-color: #121212;
+  overflow:scroll;
+}
+.right header{
+  color:#fff;
+  padding:15px 25px;
+  position: sticky;
+  top:0;
+  left:0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  background-color: #121212;
+}
+.right header .arrows img{
+  width:20px;
+}
+.right header .menu{
+  display: flex;
+  align-items: center;
+  gap:15px;
+}
+.right header .menu button{
+  font-size: 16px;
+  font-weight: 500;
+  padding:6px 15px;
+  border-radius: 20px;
+  border:0;
+  cursor: pointer;
+}
+.menu .premium-btn{
+  background-color: #fff;
+  color:#000;
+}
+.menu .install-btn{
+  display: flex;
+  align-items: center;
+  gap:5px;
+  background: #000;
+  color:#fff;
+}
+.menu .install-btn:hover{
+  background-color: #fff;
+  color:#000;
+  transition: .3s;
+}
+.menu button i{
+  font-size: 20px;
+}
+.menu #user-icon{
+  font-size: 23px;
+  cursor: pointer;
+  padding:6px;
+  border-radius: 50%;
+}
+.menu #user-icon:hover{
+  background-color: #434343;
+  transition: .3s;
+}
+
+/*Music Playlist*/
+.music{
+  padding: 20px 20px 50px;
+}
+.card-cn{
+  margin-top:20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+  flex-wrap: wrap;
+  grid-gap:15px;
+}
+.music h2{
+  font-size:25px;
+  color:#fff;
+}
+.music .card{
+  width:210px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding:15px;
+  border-radius: 5px;
+  color:#fff;
+  position: relative;
+  margin-bottom: 20px;
+}
+.card .card-img{
+  width:100%;
+  border-radius:inherit;
+}
+.card h5{
+  font-size:16px;
+  margin:5px 0;
+}
+.card p{
+  font-size: 13px;
+  font-weight:500;
+  color:#a9a9a9;
+}
+.card:hover{
+  cursor: pointer;
+  background-color: #252525;
+  transition:all .3s ease-in-out;
+}
+.card .play-icon{
+  position: absolute;
+  right:25px;
+  bottom: 100px;
+  transform: translate(0,10px);
+  opacity: 0;
+  transition:all .3s ease-in-out;
+}
+.card:hover .play-icon{
+  transform: translate(0,0);
+  opacity: 1;
+}
+.card .play-icon img{
+  width:45px;
+}
+
+/* Player */
+.player{
+  position: fixed;
+  bottom:0;
+  width:100vw;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+.left-sec{
+  display: flex;
+  align-items: center;
+  width:25%;
+  height:100%;
+  padding: 0 8px;
+}
+.left-sec img{
+  width:45px;
+  margin-right:10px;
+}
+.song h5{
+  font-size:14px;
+  color:#fff;
+  font-weight: 400;
+}
+.song h6{
+  font-size:14px;
+  font-weight: 400;
+  color:#A7A7A7;
+}
+.left-sec i{
+  font-size:20px;
+  color:#A7A7A7;
+  margin: 0 10px;
+}
+.left-sec #op{
+  background-color: #fff;
+  color:#000;
+  border-radius: 50%;
+}
+.middle-sec{
+  width:50%;
+}
+.middle-sec img, i{
+  cursor: pointer;
+}
+.tools{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px 8px;
+}
+.middle-sec img{
+  width:15px;
+  margin:0 16px;
+  opacity: 0.7;
+}
+#play{
+  width:30px;
+  margin:0 15px;
+  opacity: 1;
+}
+.middle-sec img:hover{
+  opacity: 1;
+}
+.scroll{
+  text-align: center;
+}
+.scroll .progress{
+  width: 70%;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 0 8px;
+}
+.scroll .progress::-webkit-slider-runnable-track{
+  height: 0.3rem;
+  margin-top: -12px;
+  background-color: #b3b3b3;
+  border-radius: 100px;
+}
+.scroll .progress::-webkit-slider-thumb{
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: #1db954;
+  border-radius: 100px;
+  margin-top: -6px;
+}
+.scroll span{
+  color:#A7A7A7;
+}
+.right-sec{
+  display: flex;
+  align-items: center;
+  width:25%;
+  justify-content: flex-end;
+  padding: 0 8px;
+}
+.right-sec i{
+  font-size: 20px;
+  color:#fff;
+  opacity: 0.7;
+  margin:0 8px;
+  font-weight: 500;
+}
+.right-sec #play-icon{
+  font-size: 24px;
+}
+.right-sec i:hover{
+  opacity: 1;
+}
+.right-sec .progress{
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 0 8px;
+}
+.right-sec .progress::-webkit-slider-runnable-track{
+  height:5px;
+  background-color: #b3b3b3;
+  border-radius: 100px;
+}
+.right-sec .progress::-webkit-slider-thumb{
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #1db954;
+  border-radius: 100px;
+  margin-top: -7px;
+}
