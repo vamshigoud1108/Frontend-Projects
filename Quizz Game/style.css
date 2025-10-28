@@ -1,0 +1,67 @@
+*{
+  padding: 0;
+  margin:0;
+  font-family: 'Poppins',sans-serif;
+  list-style: none;
+  color:#201658;
+}
+body{
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #201658;
+}
+.container{
+  width:450px;
+  background-color: #fff;
+  padding:15px ;
+  border-radius: 4px;
+}
+.container h3{
+  font-size:22px;
+  font-weight:600;
+  padding-bottom:8px;
+  border-bottom: 2px solid #d8d8d8;
+}
+.quizz-box{
+  margin-top: 15px;
+}
+.quizz-box #qustn{
+  font-size:20px;
+  font-weight: 500;
+}
+.quizz-box ul li{
+  border:2px solid #201658;
+  color:#201658;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight:500;
+  padding:6px 10px;
+  margin:15px 0;
+  cursor: pointer;
+  text-transform:capitalize;
+}
+.quizz-box ul li:hover:not([disable]){
+  background-color: #201658;
+  color:#fff;
+  transition: .3s;
+}
+.container .next-op{
+  text-align: center;
+}
+.container .next-op button{
+  width:150px;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #201658;
+  margin-top: 10px;
+  color:#fff;
+  border:0;
+  padding:6px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.quizz-box ul li.disable{
+  pointer-events: none;
+}
